@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPurple"
+    tools:context="com.example.hirasawarei.sns_beta.account.SplashActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:foregroundGravity="center_vertical"
+        android:id="@+id/splashImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/orizuru2"
+        android:layout_marginTop="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/splashTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORIZURU"
+        android:gravity="center"
+        android:textColor="#fff200"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/splashImageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

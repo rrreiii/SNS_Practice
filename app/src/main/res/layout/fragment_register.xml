@@ -1,0 +1,130 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPurple">
+
+    <ImageView
+        android:id="@+id/rIvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/orizuru2"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/rTvOrizuru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORIZURU"
+        android:textSize="25sp"
+        android:textColor="@color/colorYellow"
+        />
+
+    <EditText
+        android:id="@+id/rEtUserName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:hint="*User Name"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/rEtEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:hint="*Email Address"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/rEtPassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:hint="*Password"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/rEtComment"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:hint="Comment"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/rEtURL"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:hint="SiteURL"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Profile Photo"/>
+
+    <ImageButton
+        android:id="@+id/rImageButton"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="150dp"
+
+        android:src="@drawable/ic_add"/>
+
+
+
+    <Button
+        android:id="@+id/rBtRegister"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow"
+        android:text="register"
+        android:textColor="@color/colorPurple"
+        android:textSize="30sp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/rTvMoveToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="If you already have your account, please login."
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hirasawarei.sns_beta.uploadPosts.AddPhotoActivity"
+    tools:layout_editor_absoluteY="25dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:layout_editor_absoluteX="0dp"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_weight="1"
+        android:id="@+id/relativeLayout1">
+        <TextView
+            android:id="@+id/aTvSelectImage"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Image" />
+
+        <ImageView
+            android:id="@+id/aIvCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            app:srcCompat="@drawable/ic_camera_al"
+            android:layout_alignTop="@+id/aTvSelectImage" />
+
+        <ImageView
+            android:id="@+id/aIvGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/aTvSelectImage"
+            android:layout_marginEnd="100dp"
+            app:srcCompat="@drawable/ic_photo_gallery" />
+
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:scaleType="center"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_below="@id/aTvSelectImage"
+            android:src="@drawable/ic_image"
+            android:layout_height="340dp" />
+
+        <EditText
+            android:id="@+id/etCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivImage"
+            android:layout_marginTop="20dp"
+            android:hint="Caption" />
+
+        <Button
+            android:id="@+id/tBtPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCaption"
+            android:layout_marginTop="20dp"
+            android:text="Post"/>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/aProgressBar"
+            android:layout_below="@id/tBtPost"
+            android:layout_marginTop="20dp"
+            android:max="100"
+            style="@style/Base.Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+    <include
+        layout="@layout/snippet_bottom_navigation_view"
+        />
+
+
+</LinearLayout>

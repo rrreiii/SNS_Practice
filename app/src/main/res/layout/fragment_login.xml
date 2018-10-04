@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPurple">
+
+
+    <ImageView
+        android:id="@+id/lIvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/orizuru2"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/lTvOrizuru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ORIZURU"
+        android:textSize="25sp"
+        android:textColor="@color/colorYellow"
+        />
+
+
+    <EditText
+        android:id="@+id/lEtEmail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:hint="email address"
+        android:layout_marginTop="30dp"
+        />
+
+    <EditText
+        android:id="@+id/lEtPassword"
+        android:backgroundTint="@color/colorYellow"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="#dedede"
+        android:textSize="25sp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/lBtLogin"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:background="@color/colorYellow"
+        android:text="Login"
+        android:textColor="@color/colorPurple"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="moveInto"/>
+
+    <TextView
+        android:id="@+id/lTvMoveToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:text="If you don't have your account, please register."
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite" />
+
+
+
+
+</LinearLayout>
